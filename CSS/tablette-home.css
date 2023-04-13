@@ -1,0 +1,15 @@
+@media only screen and (min-width: 768px) and (max-width: 1024px){
+   
+.map input{
+    width:18%;
+}
+
+
+footer{
+    width: 91%;
+}
+
+.btn-comm{
+    left: 38%;
+}
+}
