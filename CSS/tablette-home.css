@@ -12,4 +12,14 @@ footer{
 .btn-comm{
     left: 38%;
 }
+.conteneur-fonc{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    
+}
+/* menu cards */
+.menu-cards{
+    width: 100%;
+}
+
 }
