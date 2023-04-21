@@ -1,25 +1,7 @@
-@media only screen and (min-width: 768px) and (max-width: 1024px){
-   
-.map input{
-    width:18%;
-}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
 
-
-footer{
-    width: 91%;
-}
-
-.btn-comm{
-    left: 38%;
-}
-.conteneur-fonc{
-    display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
-    
-}
-/* menu cards */
-.menu-cards{
-    width: 100%;
-}
+    .map input {
+        width: 18%;
+    }
 
 }
