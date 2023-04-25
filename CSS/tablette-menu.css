@@ -1,5 +1,18 @@
 @media only screen and (min-width: 768px) and (max-width: 1024px){
- 
+
+
+.logo-menu-1{
+    left: -8px;
+}
+ .logo-menu-1 a i{
+position: absolute;
+left: 20px;
+    }
+
+ button.btn-comm{
+  
+    left: 38%;
+ }
 
  }
     

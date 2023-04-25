@@ -10,13 +10,19 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
+    right: 20px;
   }
   .logo-menu-1 a i {
     display: inline-flex;
-    align-items: flex-start;
-    justify-content: flex-start;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 50px;
+    bottom: 0px;
+    font-size: larger;
   }
-  /* Main */
+ /* main et menu */
   .image-menu {
     width: 100%;
   }
@@ -26,17 +32,13 @@
     justify-content: center;
     background-color: #ffffff;
   }
-  .menu-titre {
-    padding: 0;
-    /* #f6f6f6 */
-  }
+  
 
   .conteneur-menu {
     background-color: #f6f6f6;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* align-items: center; */
     margin: auto;
     width: 80%;
     height: 100%;
@@ -47,11 +49,15 @@
   .conteneur-carte {
     padding: 0 200px 0 200px;
   }
+  .choix-menu{
+    width: 10%;
+    margin: -1rem -6rem -1rem 1rem
+  }
 
   /* Button */
   .btn-comm {
-    left: 43%;
-    margin-bottom: 40px;
+  left: 40%;
+  margin-bottom: 40px;
   }
 
 /* Footer */

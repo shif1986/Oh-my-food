@@ -1,118 +1,131 @@
 @media only screen and (min-width: 1024px) {
   body {
-      max-width: 1440px;
-      margin: 0 auto;
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+  /* Loading animation */
+  .loading{
+    width: 75%;
+  
+  }
+  .loading h1 {
+    font-size: 100px;
+    bottom: -25%;
+  }
+  .wave {
+    width: 600px;
+    height: 600px;
   }
 
   /* logo */
   .logo a {
-      gap: 50px;
-      font-family: "Shrikhand", cursive;
-      text-decoration: none;
-      color: #101010;
-      margin: 30px;
-      /* box-shadow: 0 5px 2px -1px rgba(86, 81, 81, 0.1215686275); */
+    gap: 50px;
+    font-family: "Shrikhand", cursive;
+    text-decoration: none;
+    color: #101010;
   }
 
   .logo img {
-      width: 200px;
+    width: 200px;
   }
 
   /* maps */
   .map {
-      width: 98%;
-      margin: 0 auto;
-      padding-left: 25px;
-      gap: 17px;
+    margin: 0 auto;
+    padding-left: 25px;
+    gap: 17px;
   }
 
   .map input {
-      display: flex;
-      justify-content: center;
+    display: flex;
+    justify-content: center;
   }
 
   /* explorer le resto */
 
   .explorer-resto h1 {
-      /* margin: 30px 0 18px 0; */
-      text-align: center;
-      font-size: 40px;
+    /* margin: 30px 0 18px 0; */
+    text-align: center;
+    font-size: 40px;
   }
 
   .explorer-resto p {
-      text-align: center;
-      margin: 0;
-      display: flex;
-      align-items: center;
+    text-align: center;
+    margin: 0;
+    display: flex;
+    align-items: center;
   }
 
   /* Fonctionnement */
   .conteneur-fonc {
-      padding: 15px 175px 30px 175px;
+    padding: 15px 175px 30px 175px;
   }
 
   .list-conteneur-fils {
-      flex-direction: row;
+    flex-direction: row;
   }
   /* Menu Cards */
   .main-menu {
-      padding: 15px 175px 30px 175px;
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      justify-content: center;
-      column-gap: 90px;
+    padding: 15px 175px 30px 175px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    column-gap: 90px;
   }
 
   .menu-titre {
-      grid-column: 1/-1;
+    grid-column: 1/-1;
   }
 
   .menu-cards {
-      margin-top: 30px;
+    margin-top: 30px;
+    translate: 500ms linear;
+  }
+
+  .menu-cards:hover {
+    transform: scale(1.1);
   }
 
   /* Textes */
 
-
   .text-cards h2 {
-      margin: 0;
-      padding: 20px 0 10px 20px;
+    margin: 0;
+    padding: 20px 0 10px 20px;
   }
 
   .menu-cards p {
-      padding-left: 20px;
-      margin-top: 0;
-
+    padding-left: 20px;
+    margin-top: 0;
   }
 
   /* hover */
   .like-heart {
-      justify-content: flex-end;
-      padding-right: 33px;
+    justify-content: flex-end;
+    padding-right: 33px;
   }
 
   /* Footer */
   footer {
-      display: flex;
-      justify-content: flex-start;
-      gap: 50px;
-      padding: 64px 25px 31px 25px;
-      flex-direction: row-reverse;
+    display: flex;
+    justify-content: flex-start;
+    gap: 50px;
+    padding: 64px 25px 31px 25px;
+    flex-direction: row-reverse;
   }
 
   footer a h2 {
-      display: inline-flex;
-      justify-content: flex-end;
-      padding-top: 0;
+    display: inline-flex;
+    justify-content: flex-end;
+    padding-top: 0;
   }
 
   footer ul {
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      justify-content: flex-end;
-      gap: 25px;
-      padding: 0;
-      margin: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 25px;
+    padding: 0;
+    margin: 0;
   }
 }
