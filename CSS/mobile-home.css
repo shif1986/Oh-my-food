@@ -11,15 +11,16 @@ main {
 /* Loading animation */
 .loading {
   width: 100%;
-  height: 150vh;
+  height: 100%;
   position: fixed;
   z-index: 1;
-  background-color: #f3eded;
   display: flex;
   justify-content: center;
   align-items: center;
-  animation: disappear 5s 5s forwards;
-  opacity: 5px;
+  animation: disappear 5s forwards;
+  animation-fill-mode: both;
+  background: rgb(163, 94, 94);
+  opacity: 0.8;
 }
 
 .loading h1 {
@@ -40,11 +41,10 @@ main {
   height: 400px;
   border-radius: 50%;
   background: linear-gradient(358deg, #9356dc -5.2%, #ff79da 110.74%);
-  animation: wave 5s ease-in-out ;
+  animation: wave 5s ease-in-out;
+  animation-fill-mode: both;
   position: absolute;
-  /* transform: translate(); */
-  /* opacity: (20px);
-   */
+  top:400px;
 }
 
 .wave:nth-child(1) {
@@ -81,10 +81,17 @@ main {
 
 @keyframes disappear {
   0% {
-    transform: scale(0);
+    background: rgb(226, 227, 229);
+    opacity: 0.8;
+  }
+  90%{
+    background: rgb(226, 227, 229);
+    opacity: 0.8;
   }
   100% {
-    transform: scale(0);
+    background: initial;
+    opacity: 1;
+    visibility: hidden;
   }
 }
 
@@ -252,6 +259,7 @@ main {
   box-shadow: 0px 4px 15px rgba(255, 255, 255, 0.15);
   background-color: #ffffff;
   position: relative;
+  margin-bottom: 20px;
 }
 
 /* Images */
