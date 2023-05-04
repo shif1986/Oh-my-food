@@ -132,34 +132,29 @@ main {
   display: flex;
   position: relative;
   justify-content: space-between;
-  transition: slide-down 0.5s ease-in-out;
 }
 @keyframes slide-down{
   from{
     opacity: 0.2;
-    line-height: 25px;}
+    }
 
   to{
     opacity: 1;
-    line-height: 200px;} 
+  } 
+}
+.entre{
+ animation: slide-down 0.5s linear;
+}
+
+.plat{
+  animation: slide-down 0.8s linear;
+}
+
+.dessert{
+  animation: slide-down 1.2s linear;
 }
 
 
-/* 
-@keyframes nom-plat {
-  0% {
-    transform: translateY(-50%) scale(0);
-    opacity: 1;
-  }
-  50% {
-    transform: translatey(-50%) scale();
-    opacity: 0;
-  }
-  100% {
-    transform: translatey(-50%) scale(0);
-    opacity: 1;
-  }
-} */
 
 
 .sous-titre {
@@ -196,7 +191,7 @@ main {
   text-overflow: ellipsis;
   overflow: hidden;
   font-size: 15px;
-  
+
   
 }
 .choix-menu i {
