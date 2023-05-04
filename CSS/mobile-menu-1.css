@@ -42,6 +42,7 @@ main {
   height: 275px;
   object-fit: cover;
 }
+
 main {
   display: inline-flex;
   flex-direction: column;
@@ -60,8 +61,6 @@ main {
   border-radius: 20px 20px 0 0;
 
 }
-
-
 
 
 .menu-titre {
@@ -100,23 +99,11 @@ main {
   overflow: hidden;
   text-overflow: ellipsis;
 }
+
 .conteneur-carte {
   padding: 0 13px 0 13px;
   animation: carte 5s ease-in-out;
 }
-
-@keyframes carte {
-
-  0% {
-    transform: translatey() scale(1);
-    opacity: 0;
-  }
-  100% {
-    transform: translatey() scale(0);
-    opacity: 1;
-  }
-}
-
 
 .conteneur-carte h3 {
   font-size: 16px;
@@ -133,28 +120,31 @@ main {
   position: relative;
   justify-content: space-between;
 }
-@keyframes slide-down{
-  from{
-    opacity: 0.2;
-    }
 
-  to{
-    opacity: 1;
-  } 
-}
-.entre{
- animation: slide-down 0.5s linear;
+@keyframes slide-down {
+  0% {
+      opacity: 0;
+  }
+
+  100% {
+      opacity: 1;
+  }
 }
 
-.plat{
-  animation: slide-down 0.8s linear;
+.entre {
+  animation: slide-down 1s linear 1s;
+  animation-fill-mode: both;
 }
 
-.dessert{
-  animation: slide-down 1.2s linear;
+.plat {
+  animation: slide-down 1s linear 2s;
+  animation-fill-mode: both;
 }
 
-
+.dessert {
+  animation: slide-down 1s linear 3s;
+  animation-fill-mode: both;
+}
 
 
 .sous-titre {
@@ -192,8 +182,9 @@ main {
   overflow: hidden;
   font-size: 15px;
 
-  
+
 }
+
 .choix-menu i {
   color: #ffffff;
   font-size: 20px;
@@ -253,6 +244,7 @@ button a {
   font-weight: 500;
   margin-bottom: 40px;
 }
+
 .btn-comm:hover {
   transform: scale(1.1);
 }

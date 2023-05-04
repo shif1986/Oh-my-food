@@ -1,6 +1,6 @@
 @media only screen and (min-width: 1024px) {
   body {
-    max-width: 1440px;
+
     margin: 0 auto;
   }
   /* Loading animation */
@@ -36,6 +36,7 @@
   .map input {
     display: flex;
     justify-content: center;
+    font-size: 16px;
   }
 
   /* explorer le resto */
@@ -113,7 +114,7 @@
   footer a h2 {
     display: inline-flex;
     justify-content: flex-end;
-    padding-top: 0;
+    
   }
 
   footer ul {
