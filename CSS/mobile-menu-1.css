@@ -256,10 +256,13 @@ footer {
   display: inline-flex;
   flex-direction: column;
 
-  width: 100%;
+  
+}
+footer a{
+  text-decoration: none;
 }
 
-footer h2 {
+footer  h2 {
   font-family: "Shrikhand", cursive;
   color: #ffffff;
   font-size: 18px;
