@@ -255,11 +255,14 @@ footer {
   background-color: #353535;
   display: inline-flex;
   flex-direction: column;
+  /* width: 100%; */
+  
 
   
 }
 footer a{
   text-decoration: none;
+ 
 }
 
 footer  h2 {
