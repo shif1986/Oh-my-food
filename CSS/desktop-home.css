@@ -62,6 +62,9 @@
   .list-conteneur-fils {
     flex-direction: row;
   }
+  .conteneur-fils {
+    gap: 50px;
+  }
   /* Menu Cards */
   .main-menu {
     padding: 15px 175px 30px 175px;
