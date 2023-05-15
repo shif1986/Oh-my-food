@@ -77,7 +77,7 @@
 
   .menu-cards {
     margin-top: 30px;
-    translate: 500ms linear;
+   transition:  transform 500ms linear;
   }
 
   .menu-cards:hover {
