@@ -1,7 +1,8 @@
 body {
-  margin: 0;
+  margin: 0 auto;
   font-family: "Roboto", sans-serif;
   text-decoration: none;
+  max-width: 1440px;
 }
 
 main {
@@ -349,8 +350,10 @@ box-shadow: 1px 5px 9px 0px rgba(65, 58, 58, 0.7);
 /* Footer */
 footer {
   background-color: #353535;
+  width: 100%;
+  
 }
-footer a{
+footer a h2{
   text-decoration: none;
 }
 
