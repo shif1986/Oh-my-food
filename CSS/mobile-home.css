@@ -147,7 +147,7 @@ main {
   padding-bottom: 50px;
 }
 
-.explorer-resto h2 {
+.explorer-resto h1 {
   padding-top: 40px;
   font-size: 24px;
   font-weight: 700;
@@ -158,9 +158,10 @@ main {
   font-weight: 300;
 }
 
-.button a {
+button {
   display: flex;
   justify-content: center;
+  text-align: center;
   color: #ffffff;
   border: none;
   background: linear-gradient(358deg, #9356dc -5.2%, #ff79da 110.74%);
@@ -168,26 +169,30 @@ main {
   border-radius: 25px;
   text-decoration: none;
   cursor: pointer;
-  transition: transform 300ms ease-in;
+  /* transition: transform 300ms ease-in; */
   width: 220px;
-  height: 50px;
+  padding: 18px;
   margin-top: 30px;
-}
-
-.button:hover {
-  transform: scale(1.1);
-}
-
-.button a p {
   font-size: 16px;
   font-weight: 500;
+ 
 }
+
+
+button:hover {
+background: linear-gradient(358deg, #a15cf6 -5.2%, #fc53cc 110.74%);
+box-shadow: 1px 5px 9px 0px rgba(65, 58, 58, 0.7);
+
+}
+
+
 
 /* Fonctionnement */
 
 .conteneur-fonc {
   padding: 48px 20px 68px 25px;
   background-color: #ffffff;
+  position: relative;
 }
 
 .list-conteneur-fils {
@@ -202,6 +207,8 @@ main {
   cursor: pointer;
   display: flex;
   flex-direction: row;
+  justify-content: space-evenly;
+  position: relative;
   align-items: center;
   text-align: center;
   background-color: #f6f6f6;
@@ -210,6 +217,8 @@ main {
   gap: 20px;
   padding: 0;
   margin-top: 25px;
+
+
 }
 
 .conteneur-fils:hover i {
@@ -220,6 +229,8 @@ main {
   font-size: 18px;
   font-weight: 500;
   color: #000000;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 
 .conteneur-fils i {
@@ -233,13 +244,16 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-left: -15px;
+  /* margin-left: -15px; */
   color: white;
   width: 28px;
   height: 28px;
   font-size: 18px;
   border-radius: 100%;
   background-color: #9356dc;
+  position: absolute;
+  left: -10px;
+  
 }
 
 /* Menu Cards */
@@ -289,7 +303,7 @@ main {
   align-items: center;
 }
 
-.text-cards h2 {
+.text-cards h3 {
   font-size: 18px;
   font-weight: 700;
   padding: 0 0 0 14px;
@@ -311,6 +325,7 @@ main {
   display: flex;
   justify-content: center;
   padding-right: 30px;
+
 }
 
 .empty-heart {
@@ -324,6 +339,7 @@ main {
   background: linear-gradient(#9356dc, #ff79da);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  transition: all 0.5s ease-in-out;
 }
 
 .full-heart:hover {

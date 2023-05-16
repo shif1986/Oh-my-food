@@ -1,49 +1,21 @@
 @media only screen and (min-width: 1024px) {
   body {
-
-    padding: 0;
-    margin: 0 auto;
-    background-color: #ffffff;
   }
   /* logo */
-  .logo-menu-1 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    right: 20px;
-  }
+
   .logo-menu-1 a i {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    left: 50px;
-    bottom: 0px;
-    font-size: larger;
   }
- /* main et menu */
+  /* main et menu */
   .image-menu {
     width: 100%;
   }
-  main {
-    display: inline-flex;
-    flex-direction: column;
-    justify-content: center;
-    background-color: #ffffff;
-  }
-  
 
   .conteneur-menu {
-    background-color: #f6f6f6;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: auto;
+    /* margin: auto;
     width: 80%;
     height: 100%;
     margin-top: -30px;
-    border-radius: 20px 20px 0 0;
+    border-radius: 20px 20px 0 0; */
   }
 
   .conteneur-carte {
@@ -52,32 +24,31 @@
 
   /* Button */
   .btn-comm {
-  left: 40%;
-  margin-bottom: 40px;
+    left: 40%;
+    margin-bottom: 40px;
   }
 
-/* Footer */
-footer {
-  display: flex;
-  justify-content: flex-start;
-  gap: 50px;
-  padding: 64px 25px 31px 25px;
-  flex-direction: row-reverse;
-}
+  /* Footer */
+  footer {
+    display: flex;
+    justify-content: flex-start;
+    gap: 50px;
+    padding: 64px 25px 31px 25px;
+    flex-direction: row-reverse;
+  }
 
-footer a h2 {
-  display: inline-flex;
-  justify-content: flex-end;
-}
+  footer a h2 {
+    display: inline-flex;
+    justify-content: flex-end;
+  }
 
-footer ul {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: flex-end;
-  gap: 25px;
-  padding: 0;
-  margin: 0;
-}
-
+  footer ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 25px;
+    padding: 0;
+    margin: 0;
+  }
 }
