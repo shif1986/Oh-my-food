@@ -1,6 +1,5 @@
 @media only screen and (min-width: 1024px) {
   body {
-
     margin: 0 auto;
   }
   /* Loading animation */
@@ -56,18 +55,20 @@
 
   /* Fonctionnement */
   .conteneur-fonc {
-    padding: 15px 175px 30px 175px;
+    padding: 15px 10% 30px 10%;
   }
 
   .list-conteneur-fils {
     flex-direction: row;
   }
   .conteneur-fils {
-    gap: 40px;
+    padding-left: 5%;
+    justify-content: flex-start;
   }
+
   /* Menu Cards */
   .main-menu {
-    padding: 15px 175px 30px 175px;
+    padding: 15px 10% 30px 10%;
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-content: center;
@@ -80,7 +81,7 @@
 
   .menu-cards {
     margin-top: 30px;
-   transition:  transform 500ms linear;
+    transition: transform 500ms linear;
   }
 
   .menu-cards:hover {
@@ -115,7 +116,7 @@
   footer a h2 {
     display: inline-flex;
     justify-content: flex-end;
-    padding: 65px 50px 35px  25px;
+    padding: 65px 50px 35px 25px;
   }
 
   footer ul {
@@ -124,8 +125,8 @@
     align-items: center;
     justify-content: flex-end;
     gap: 25px;
-   
+
     margin: 0;
-    padding: 65px 25px 25px  25px;
+    padding: 65px 25px 25px 25px;
   }
 }

@@ -1,6 +1,7 @@
 body {
   padding: 0;
-  margin: 0;
+  margin: auto;
+  max-width: 1440px;
   font-family: "Roboto", sans-serif;
   text-decoration: none;
   background-color: #ffffff;
@@ -18,7 +19,7 @@ main {
   justify-content: center;
   position: relative;
   /* right: 58px; */
-  gap: 30px;
+  gap: 10px;
   padding: 0;
   margin: auto;
 }
@@ -61,17 +62,18 @@ main {
   justify-content: center;
   margin-top: -30px;
   border-radius: 20px 20px 0 0;
-  position: relative;
+ 
 
 }
 
 
 .menu-titre {
   display: flex;
-  flex-direction: column;
   align-items: center;
   text-align: center;
   justify-content: center;
+  position: relative;
+
 
 }
 
@@ -83,18 +85,32 @@ main {
 }
 
 .menu-titre i {
-  padding: 5px 0 0 25px;
+ 
   font-size: 24px;
 
 }
+
+.like-heart {
+  display: flex;
+  justify-content: center;
+  margin: 25px 0px 0 30px;
+  
+
+
+}
+
 .full-heart {
   cursor: pointer;
   position: absolute;
-
+  opacity: 0;
   background: linear-gradient(#9356dc, #ff79da);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  transition: all 0.5s ease-in-out;
   
+}
+.full-heart:hover {
+  opacity: 1;
 }
 
 
@@ -203,7 +219,10 @@ main {
   text-overflow: ellipsis;
   overflow: hidden;
   font-size: 15px;
-
+  position: absolute;
+  right: 5px;
+  bottom: 0px;
+  transition: all 0.8s ease-in-out;
 
 }
 
@@ -219,55 +238,57 @@ main {
   align-items: center;
   justify-content: center;
   font-size: 15px;
-  width: 60px;
+  width: 0px;
   border-radius: 0 20px 20px 0;
   cursor: pointer;
   background-color: #99e2d0;
   visibility: hidden;
   /* z-index: -1; */
-  transition: all 0.5s ease-in-out;
-  position: absolute;
-  top: 0;
-  right: -60px;
+  transition: all 0.8s ease-in-out;
   height: 100%;
 }
 
 /* Hover */
 .carte:hover .choix-menu {
-  right: 0px;
+ width: 60px;
   visibility: visible;
 }
 
-.carte:hover .nom-plat {
-  padding-right: 75px;
+.carte:hover .prix-plat {
+  right: 60px;
 }
 
 /* Button-Commander */
 
-button  {
-  text-decoration: none;
-  color: #ffffff;
+.btn-comm{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
-.btn-comm {
-  position: relative;
-  left: 27%;
+button {
+ 
+  
+  /* position: relative;
+  left: 40%; */
+  color: #ffffff;
   border: none;
-  text-decoration: none;
   background: linear-gradient(358deg, #9356dc -5.2%, #ff79da 110.74%);
   box-shadow: 1px 5px 9px 0px rgb(109 109 109 / 70%);
   border-radius: 25px;
+  text-decoration: none;
   cursor: pointer;
-  transition: transform 400ms ease-in;
   width: 186px;
   height: 50px;
   margin-top: 30px;
   font-size: 16px;
   font-weight: 500;
   margin-bottom: 40px;
+
 }
 
-.btn-comm:hover {
+button:hover {
   background: linear-gradient(358deg, #a15cf6 -5.2%, #fc53cc 110.74%);
   box-shadow: 1px 5px 9px 0px rgba(65, 58, 58, 0.7);
 }
