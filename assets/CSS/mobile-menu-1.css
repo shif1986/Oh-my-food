@@ -136,6 +136,7 @@ main {
   display: flex;
   position: relative;
   justify-content: space-between;
+  
 }
 
 @keyframes slide-down {
@@ -201,6 +202,7 @@ main {
   overflow: hidden;
   font-size: 15px;
   margin-left: auto;
+ 
   /* position: absolute;
   right: 5px;
   bottom: 0px; */
@@ -222,21 +224,23 @@ main {
   /* z-index: -1; */
   transition: all 0.8s ease-in-out;
   height: 100%;
+  position: relative;
+  left: 15px;
+  
 }
-.choix-menu i {
+.choix-menu a i {
   background-color: #ffffff;
   color: #99e2d0;
   font-size: 15px;
   border-radius: 50%;
   padding: 3px;
-  /* transition: all 0.0s ease-in-out; */
-  /* width: 0; */
-
+  margin: 0px 10px 0 -5px;
 }
 
-/* Hover */
-.carte:hover .choix-menu {
-  width: 60px;
+
+/* Hover  */
+ .carte:hover .choix-menu {
+  width: 80px;
   visibility: visible;
 }
 
