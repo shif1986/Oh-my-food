@@ -1,9 +1,10 @@
 @media only screen and (min-width: 1024px) {
-  body {
-    margin: 0 auto;
-  }
-  /* Loading animation */
+  
 
+  /* Loading animation */
+  .loading {
+    
+  }
   .loading h1 {
     font-size: 100px;
     bottom: -25%;

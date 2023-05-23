@@ -1,5 +1,7 @@
 @media only screen and (min-width: 1024px) {
-  body {
+  
+  main{
+    align-items: center;
   }
   /* logo */
 
@@ -8,6 +10,9 @@
   /* main et menu */
   .image-menu {
     width: 100%;
+  }
+  .conteneur-menu{
+    width: 80%;
   }
 
 
