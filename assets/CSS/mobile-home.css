@@ -46,7 +46,7 @@ main {
   animation: wave 5s ease-in-out;
   animation-fill-mode: both;
   position: absolute;
-  top:400px;
+  top:320px;
 }
 
 .wave:nth-child(1) {
