@@ -12,7 +12,10 @@
   .wave {
     width: 600px;
     height: 600px;
+    top:520px;
   }
+
+
 
   /* logo */
   .logo a {
